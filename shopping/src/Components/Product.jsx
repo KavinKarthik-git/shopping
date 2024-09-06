@@ -1,9 +1,15 @@
 import React from 'react'
 import  './Product.css'
-export const Product = ({product,cart,setCart}) => {
-
+import { useContext } from 'react'
+import { nameofcontext } from '../App'
+export const Product = ({product}) => {
+    const {cart,setCart} = useContext(nameofcontext)
     const addCart = () =>{
       setCart([...cart,product])
+    }
+    const removeCart = () =>{
+        setCart(cart.filter((prod) => product.id !== prod.id))
+
     }
   return (
     <div className='product-container'>
@@ -14,7 +20,8 @@ export const Product = ({product,cart,setCart}) => {
 <div className='item'>
 <h2>{product.name}</h2>
  <p>{product.amt}</p>
- <button onClick={addCart}>Add to Cart</button>
+ {cart.includes(product)?<button className='remove' onClick={removeCart}>Remove form Cart</button>:<button className='add'onClick={addCart}>Add to Cart</button>}
+ 
     </div>        
     </div>
   )

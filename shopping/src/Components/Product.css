@@ -10,7 +10,7 @@
 
 
 }
-.item button{
+.add{
     background-color: teal;
     padding: 10px 10px;
     color: aliceblue;
@@ -18,10 +18,19 @@
     border-radius: 3px;
     
 }
-.item button:hover{
+.remove{
+    background-color: rgb(177, 58, 45);
+    padding: 10px 10px;
+    color: aliceblue;
+    border: none;
+    border-radius: 3px;
+}
+.add:hover{
     background-color: rgb(4, 53, 53);
 }
-
+.remove:hover{
+    background-color: rgb(143, 8, 8);
+}
 .product-container .image{
     width: 250px;
     height:150px;

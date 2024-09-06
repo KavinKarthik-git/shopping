@@ -2,7 +2,7 @@ import React from 'react'
 import './Header.css'
 import {  Link } from 'react-router-dom'; // Correct import syntax
 
-export const Header = () => {
+export const Header = ({cart}) => {
   return (
     <div className='navbar'>
       <p className='title'>
@@ -15,7 +15,8 @@ export const Header = () => {
           </Link>
         </li>
         <li>
-          <Link to="/cart">  {/* Use Link correctly */}
+          <Link to="/cart">  
+          <span className='count'>{cart.length}</span>
             Cart
           </Link>
         </li>

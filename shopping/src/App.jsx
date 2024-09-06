@@ -3,25 +3,27 @@ import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 import { Header } from './Components/Header'
 import { Welcome } from './Components/Welcome'
 import { Cart } from './Components/Cart'
-import { useState } from 'react'
+import { useState,createContext } from 'react';
+
+export const nameofcontext = createContext();
 
 function App() {
   const [cart,setCart] = useState([]);
 
   return (
-<>
+<nameofcontext.Provider value={{cart,setCart}}>
       <BrowserRouter>
-      <Header/>
+      <Header cart={cart}/>
 
       <Routes>
-      <Route path="/welcome" element={<Welcome  cart={cart} setCart={setCart}/>}/>
-      <Route path="/cart" element={<Cart cart={cart} setCart={setCart}/>}/>
+      <Route path="/welcome" element={<Welcome/>}/>
+      <Route path="/cart" element={<Cart/>}/>
 
       </Routes>
       </BrowserRouter>
       
       
-</>
+</nameofcontext.Provider>
  
 
       

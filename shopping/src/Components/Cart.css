@@ -20,3 +20,10 @@
     height:200px;
 }
 
+.details button{
+    background-color: rgb(177, 58, 45);
+    padding: 10px 10px;
+    color: aliceblue;
+    border: none;
+    border-radius: 3px;
+}

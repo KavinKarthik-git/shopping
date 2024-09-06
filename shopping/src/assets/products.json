@@ -18,7 +18,7 @@
     {
         "id": 3,
         "name": "Hyderabadi Briyani",
-        "amt": "$25.00",
+        "amt": "25.00",
         "shop": "Biriyani Court",
         "ftype": "Indian",
         "pic": "https://www.app.tutorjoes.in/img/food/6.jpg"
@@ -26,7 +26,7 @@
     {
       "id": 4,
       "name": "Chicken Tandoori",
-      "amt": "$17.00",
+      "amt": "17.00",
       "shop": "Kebab Corner",
       "ftype": "Middle east",
       "pic": "https://www.app.tutorjoes.in/img/food/24.jpg"
@@ -34,7 +34,7 @@
     {
       "id": 5,
       "name": "Paper Roast",
-      "amt": "$18.00",
+      "amt": "18.00",
       "shop": "A2B",
       "ftype": "SouthIndain",
       "pic": "https://www.app.tutorjoes.in/img/food/124.jpg"
@@ -42,7 +42,7 @@
     {
       "id": 6,
       "name": "Fettuccine Alfredo",
-      "amt": "$20.00",
+      "amt": "20.00",
       "shop": "Pasta Palace",
       "ftype": "Pasta",
       "pic": "https://www.app.tutorjoes.in/img/food/26.jpg"
@@ -50,7 +50,7 @@
     {
       "id": 7,
       "name": "Veg Pizza",
-      "amt": "$12.00",
+      "amt": "12.00",
       "shop": "Salad Stop",
       "ftype": "Salad",
       "pic": "https://www.app.tutorjoes.in/img/food/12.jpg"
