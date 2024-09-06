@@ -1,0 +1,25 @@
+.navbar{
+    width: 98%;
+    height: 53px;
+    background-color: rgb(35, 39, 39);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.title{
+    color: #abaf93;
+}
+.navbar ul{
+    display: inline-flex;
+    gap: 10%
+}
+.navbar ul li {
+    display: inline-flex;
+    list-style: none;
+}
+.navbar ul li a {
+color: #23847b;
+text-decoration: none;
+}

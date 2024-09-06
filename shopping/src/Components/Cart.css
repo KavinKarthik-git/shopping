@@ -1,0 +1,22 @@
+.cart-container{
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-each{
+    border : solid #888;
+    width : 90%;
+    display: flex;
+    align-items: center;
+    gap:5px;
+    margin-bottom: 10px;;
+
+}
+
+.cart-each img{
+    width:200px;
+    height:200px;
+}
+
